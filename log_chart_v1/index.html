@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		<!-- JQuery UI-->
+		<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+		<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+		<!--<script src="./js/jqueryui_datepicker.js"></script>-->
+		
+		<!-- Highcharts -->
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<!-- JS Startup - Initailises js -->
+		<script defer src="./js/startup_charts.js"></script>
+		<script defer src="./js/highchart_theme.js"></script>
+		<!-- Get live data updates -->
+		<script defer src="./js/live_data.js"></script>
+		
+		<!-- Default Stylesheet for minimum styling -->
+		<link rel="stylesheet" type="text/css" href="./css/default.css">
+		
+		<!-- Dynamicaly set title when template is rendered -->
+		<title>SHT15 Temperature & Humidity Sensor - Chart</title>
+	</head>
+
+	<body>
+		<!-- main container -->
+		<div class="main_container">
+			<!-- Page Header -->
+			
+			<div class="page_header">
+				<!-- Page Title -->
+				<div class="page_title">SHT15 Temperature & Humidity Sensor - Chart</div>
+			</div>
+			
+			<!-- Main Menu -->
+			<div class="basic_class main_menu">
+				<!-- Presets -->
+				<button id="last_10">Last 10</button>
+				<button id="last_20">Last 20</button>
+				<button id="last_30">Last 30</button>
+				<button id="last_hour">Last Hour</button>
+				<button id="last_hour_2">Last 2 Hours</button>
+				<button id="last_hour_6">Last 6 Hours</button>
+				<button id="last_hour_12">Last 12 Hours</button>
+				<button id="last_day">Last Day</button>
+				<button id="last_day_2">Last 2 Days</button>
+				<button id="last_day_3">Last 3 Days</button>
+				<button id="last_day_4">Last 4 Days</button>
+				<button id="last_day_7">Last 7 Days</button>
+				<button id="last_day_10">Last 10 Days</button>
+				<button id="last_day_20">Last 20 Days</button>
+			</div>
+			<div class="basic_class main_menu">
+				<!-- Presets -->
+				<button id="toggle_live"></button>
+			</div>
+			
+			<!-- Date Select -->
+			<p class="">Date From: <input type="text" id="date_from">  Date To: <input type="text" id="date_to"><button id="log_interval">Chart</button></p>
+			<!--<p><input type="time"></p>-->
+			
+			<!-- Chart data summaries -->
+			<div id="chart_summary" class="basic_class">
+				<div id="sensor_1"></div>
+				<div id="sensor_2"></div>
+			</div>
+			
+			<!-- Highcharts chart container -->
+			<div id="container_0" style="width:100%; height:400px;"></div>
+			
+			<!-- Live Sensor Data -->
+			<div id="live_data" class="basic_class"></div>
+		</div>
+	</body>
+</html>

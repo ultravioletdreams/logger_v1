@@ -1,0 +1,83 @@
+body
+{
+	padding: 0em;
+	margin:0;
+	font-family: Arial,Helvetica,sans-serif;
+	background-color: #000;
+	color:#fff;
+}
+
+.main_container
+{	
+	margin: 0px auto;
+	width:90%;
+}
+
+.page_header
+{
+	margin: 0.25em 0 0 0;
+	border:solid #fff 1px;
+}
+
+.page_title
+{
+	padding: 0.5em;
+	border:solid #000 1px;
+}
+
+.basic_container
+{
+	border:solid #fff 1px;
+}
+
+.basic_class
+{
+	margin: 0.25em 0 0.25em 0;
+	border: solid #fff 1px;
+	font-size:10pt;
+}
+
+.main_menu
+{
+	border: solid #000 0px;
+}
+
+.main_menu button
+{
+	border: solid #fff 1px;
+	border-radius: 5px;
+	background-color:#000;
+	color:#fff;
+}
+
+.main_menu button:hover
+{
+	border: solid #fff 1px;
+	border-radius: 5px;
+	background-color:#fff;
+	color:#000;
+	cursor:pointer;
+}
+
+#chart_summary
+{
+	font-size:12pt;
+	padding:0.25em;
+}
+
+.live_data td:first-child
+{
+	text-align: center;
+	font-weight:bold;
+}
+
+.live_data td
+{
+border:solid #fff 1px;
+padding: 0.25em;
+}
+
+.hide-me
+{
+	display:none;
+}

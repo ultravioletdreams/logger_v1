@@ -1,0 +1,29 @@
+<?php
+
+$tmp[0]   = $template_data['sensor_1'][0];
+$tmp[1]   = $template_data['sensor_2'][0];
+$t_stamp = $template_data['current_server_time'];
+
+
+?>
+
+
+<table class="live_data">
+<thead>
+<th>Entry ID</th>
+<th>Timestamp</th>
+<th>Temp C</th>
+</thead>
+<?php for($i=0;$i<2;$i++) { ?>
+<tr>
+	<td id="entry_id"><?php echo $tmp[$i]['entry_id']; ?></td>
+	<td><?php echo $tmp[$i]['arduino_t_stamp']; ?></td>
+	<td><?php echo $tmp[$i]['temperature']; ?></td>
+</tr>
+<?php } ?>
+</table>
+
+<table class="">
+<tr><td>Next update:</td><td><div id="update_countdown" style="display:inline;"></div></td></tr>
+<tr><td>Stale updates:</td><td><div id="stale_count" style="display:inline;"></div></td></tr>
+</table>

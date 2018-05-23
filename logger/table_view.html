@@ -1,0 +1,47 @@
+<?php
+//********************************************************************************************************************************
+// Table View Template
+//********************************************************************************************************************************
+
+// Get table headers from first row
+//if(sizeof($template_data == 0)) die("<h2>No Data</h2>");
+$table_headers = array_keys($template_data[0]);
+
+?>
+
+<!-- Table styles -->
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+
+<!-- Container -->
+<div style="margin:1em;padding:1em;border:solid #000 1px;">
+
+<!-- Data Table -->
+<table>
+<!-- Table header -->
+<tr>
+<?php foreach($table_headers as $col_name){ ?>
+<th><?php echo $col_name; ?></th>
+<?php } ?>
+</tr>
+
+<!-- Table data -->
+<?php foreach($template_data as $row_data){ ?>
+<tr>
+<?php foreach($row_data as $table_data){ ?>
+<td><?php echo $table_data; ?></td>
+<?php } ?>
+</tr>
+<?php } ?>
+
+</table>
+</div>
+
+<?php
+//********************************************************************************************************************************
+// END OF FILE
+//********************************************************************************************************************************
+?>
